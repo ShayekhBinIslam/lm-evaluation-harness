@@ -1,0 +1,28 @@
+2024-04-01:14:37:42,463 INFO     [__main__.py:251] Verbosity set to INFO
+2024-04-01:14:38:22,193 WARNING  [__main__.py:316] File output/results.json already exists. Results will be overwritten.
+2024-04-01:14:38:22,193 INFO     [__main__.py:335] Selected Tasks: ['physics_gre', 'physics_gre_additional', 'physics_gre_all']
+2024-04-01:14:38:22,195 INFO     [evaluator.py:131] Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234
+2024-04-01:14:38:22,195 INFO     [evaluator.py:177] Initializing hf model, with arguments: {'pretrained': 'mistralai/Mistral-7B-Instruct-v0.2'}
+2024-04-01:14:38:22,205 INFO     [huggingface.py:163] Using device 'cuda:0'
+
+hf (pretrained=mistralai/Mistral-7B-Instruct-v0.2), gen_kwargs: (None), limit: None, num_fewshot: None, batch_size: 8
+|        Tasks         |Version|  Filter   |n-shot|  Metric  |Value|   |Stderr|
+|----------------------|------:|-----------|-----:|----------|----:|---|------|
+|physics_gre_all       |      1|score-first|     0|raw_score |   18|±  |N/A   |
+|                      |       |score-first|     0|percentile|   16|±  |N/A   |
+|                      |       |maj@8      |     0|raw_score |   18|±  |N/A   |
+|                      |       |maj@8      |     0|percentile|   16|±  |N/A   |
+|                      |       |maj@32     |     0|raw_score |   17|±  |N/A   |
+|                      |       |maj@32     |     0|percentile|   14|±  |N/A   |
+|physics_gre_additional|      1|score-first|     0|raw_score |   13|±  |N/A   |
+|                      |       |score-first|     0|percentile|    9|±  |N/A   |
+|                      |       |maj@8      |     0|raw_score |   16|±  |N/A   |
+|                      |       |maj@8      |     0|percentile|   12|±  |N/A   |
+|                      |       |maj@32     |     0|raw_score |   15|±  |N/A   |
+|                      |       |maj@32     |     0|percentile|   10|±  |N/A   |
+|physics_gre           |      1|score-first|     0|raw_score |   23|±  |N/A   |
+|                      |       |score-first|     0|percentile|   22|±  |N/A   |
+|                      |       |maj@8      |     0|raw_score |   25|±  |N/A   |
+|                      |       |maj@8      |     0|percentile|   27|±  |N/A   |
+|                      |       |maj@32     |     0|raw_score |   23|±  |N/A   |
+|                      |       |maj@32     |     0|percentile|   22|±  |N/A   |

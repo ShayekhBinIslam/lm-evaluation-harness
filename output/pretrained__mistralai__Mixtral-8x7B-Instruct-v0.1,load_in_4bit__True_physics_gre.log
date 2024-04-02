@@ -1,0 +1,29 @@
+2024-04-01:19:47:30,408 INFO     [__main__.py:251] Verbosity set to INFO
+2024-04-01:19:48:08,658 WARNING  [__main__.py:316] File output/results.json already exists. Results will be overwritten.
+2024-04-01:19:48:08,658 INFO     [__main__.py:335] Selected Tasks: ['physics_gre', 'physics_gre_additional', 'physics_gre_all']
+2024-04-01:19:48:08,660 INFO     [evaluator.py:131] Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234
+2024-04-01:19:48:08,660 INFO     [evaluator.py:177] Initializing hf model, with arguments: {'pretrained': 'mistralai/Mixtral-8x7B-Instruct-v0.1', 'load_in_8bit': True}
+2024-04-01:19:48:08,672 INFO     [huggingface.py:163] Using device 'cuda:0'
+The `load_in_4bit` and `load_in_8bit` arguments are deprecated and will be removed in the future versions. Please, pass a `BitsAndBytesConfig` object in `quantization_config` argument instead.
+
+hf (pretrained=mistralai/Mixtral-8x7B-Instruct-v0.1,load_in_4bit=True), gen_kwargs: (None), limit: None, num_fewshot: None, batch_size: 1
+|        Tasks         |Version|  Filter   |n-shot|  Metric  |Value|   |Stderr|
+|----------------------|------:|-----------|-----:|----------|----:|---|------|
+|physics_gre_all       |      1|score-first|     0|raw_score |   32|±  |N/A   |
+|                      |       |score-first|     0|percentile|   41|±  |N/A   |
+|                      |       |maj@8      |     0|raw_score |   35|±  |N/A   |
+|                      |       |maj@8      |     0|percentile|   46|±  |N/A   |
+|                      |       |maj@32     |     0|raw_score |   34|±  |N/A   |
+|                      |       |maj@32     |     0|percentile|   43|±  |N/A   |
+|physics_gre_additional|      1|score-first|     0|raw_score |   28|±  |N/A   |
+|                      |       |score-first|     0|percentile|   32|±  |N/A   |
+|                      |       |maj@8      |     0|raw_score |   31|±  |N/A   |
+|                      |       |maj@8      |     0|percentile|   38|±  |N/A   |
+|                      |       |maj@32     |     0|raw_score |   32|±  |N/A   |
+|                      |       |maj@32     |     0|percentile|   41|±  |N/A   |
+|physics_gre           |      1|score-first|     0|raw_score |   42|±  |N/A   |
+|                      |       |score-first|     0|percentile|   59|±  |N/A   |
+|                      |       |maj@8      |     0|raw_score |   42|±  |N/A   |
+|                      |       |maj@8      |     0|percentile|   59|±  |N/A   |
+|                      |       |maj@32     |     0|raw_score |   42|±  |N/A   |
+|                      |       |maj@32     |     0|percentile|   59|±  |N/A   |
